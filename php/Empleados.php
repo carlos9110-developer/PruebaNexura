@@ -57,7 +57,21 @@ Class Empleados
         } catch (Exception $ex) {
             return 0;
         }
-	}	
+	}
+    
+    
+    public function EliminarEmpleado(int $id):int
+	{
+        try {
+            $this->EliminarRoles($id);
+            $this->db->query(" DELETE FROM   empleados   WHERE id=:id  ");
+            $this->db->bind(':id',$id);
+            $this->db->execute();
+            return 1;
+        } catch (Exception $ex) {
+            return 0;
+        }
+	}
 
     private function EliminarRoles(int $id)
     {

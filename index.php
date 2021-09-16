@@ -52,6 +52,9 @@
                     <div class="col-lg-6 col-md-6">
                         <h5 class="text-info">Listado Empleados</h5>
                     </div>
+                    <div class="col-lg-6 col-md-6 text-right">
+                    <a class="btn btn-info btn-sm" href="registrarEmpleados.php"><b>Registrar Empleado</b></a>
+                    </div>
                 </div>
             </div>
             <div class="card-body">
@@ -257,6 +260,25 @@
         inicio();
 
 
+        function abrirEliminar(id_em)
+        {
+            alertify.confirm('Eliminar', 'Presione Ok si para confirmar la eliminación del usuario', 
+            function()
+            {
+                $.post("php/controlador.php", { id:id_em, op:'4' }, function(data, status)
+                {
+                    if(data==1){
+                        alertify.success('<b>Empleado eliminado con exito</b>');
+                    }else{
+                        alertify.error('<b>Error, se presento un problema al eliminar el empleado por favor intentelo de nuevo</b>');
+                    }
+                });   
+            },
+            function()
+            {
+
+            });
+        }
 
         
 
