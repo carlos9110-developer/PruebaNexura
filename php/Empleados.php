@@ -38,6 +38,7 @@ Class Empleados
 	public function EditarEmpleados(array $datos):int
 	{
         try {
+            $this->EliminarRoles($datos['id_empleado']);
             $this->db->query(" UPDATE   empleados  SET nombre=:nombre,email=:email,sexo=:sexo,area_id=:area_id,boletin=:boletin,descripcion=:descripcion WHERE id=:id  ");
             $this->db->bind(':nombre',$datos['nombre_completo']);
             $this->db->bind(':email',$datos['correo_electronico']);
@@ -49,7 +50,6 @@ Class Empleados
             $this->db->execute();
 
             if(isset($datos['roles'])){
-                $this->EliminarRoles($datos['id_empleado']);
                 $this->RegistrarRoles($datos['roles'],$datos['id_empleado']);
             }
             return 1;
