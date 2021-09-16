@@ -269,6 +269,7 @@
                 {
                     if(data==1){
                         alertify.success('<b>Empleado eliminado con exito</b>');
+                        setTimeout(function(){ window.location.href="index.php" }, 3000);
                     }else{
                         alertify.error('<b>Error, se presento un problema al eliminar el empleado por favor intentelo de nuevo</b>');
                     }
