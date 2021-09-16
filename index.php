@@ -61,11 +61,11 @@
                 <table class="table table-striped" id="tbl_empleados" width="100%">
                     <thead>
                         <tr>
-                            <th scope="col">Nombre</th>
-                            <th scope="col">Email</th>
-                            <th scope="col">Sexo</th>
-                            <th scope="col">Área</th>
-                            <th scope="col">Boletín</th>
+                            <th scope="col"><i class="bi bi-person"></i> Nombre</th>
+                            <th scope="col"><i class="bi bi-envelope"></i> Email</th>
+                            <th scope="col"><i class="bi bi-gender-ambiguous"></i> Sexo</th>
+                            <th scope="col"><i class="bi bi-bag"></i> Área</th>
+                            <th scope="col"><i class="bi bi-envelope"></i> Boletín</th>
                             <th scope="col">Modificar</th>
                             <th scope="col">Eliminar</th>
                         </tr>
@@ -109,7 +109,7 @@
                             <label>Nombre Completo *</label>
                             <div class="input-group mb-4">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-card-user"></i></span>
+                                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-person"></i></span>
                                 </div>
                                 <input class="form-control" type="text" id="nombre_completo" name="nombre_completo" required>
                             </div>
@@ -118,7 +118,7 @@
                             <label>Correo electrónico *</label>
                             <div class="input-group mb-4">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-card-heading"></i></span>
+                                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-envelope"></i></span>
                                 </div>
                                 <input class="form-control" type="email" id="correo_electronico" name="correo_electronico" required>
                             </div>
@@ -145,7 +145,7 @@
                             <label>Area *</label>
                             <div class="input-group mb-4">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-card-heading"></i></span>
+                                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-bag"></i></span>
                                 </div>
                                 <select class="form-control" name="area" id="area" required>
                                 <option value="">Seleccione una opción:</option>
