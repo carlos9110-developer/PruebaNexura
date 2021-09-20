@@ -96,7 +96,7 @@
                         <h5 class="text-info">Editar Información Empleado</h5>
                     </div>
                     <div class="col-lg-6 col-md-6 text-right">
-                        <button class="btn btn-info btn-sm" type="button" onclick="VolverListado()"><i class="bi bi-reply" ></i> <b>Listado Empleados</b></button>
+                        <a class="btn btn-info btn-sm" href="index.php"><b>Listado Empleados</b></a>
                     </div>
                 </div>
             </div>
