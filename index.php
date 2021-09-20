@@ -262,7 +262,7 @@
 
         function abrirEliminar(id_em)
         {
-            alertify.confirm('Eliminar', 'Presione Ok si para confirmar la eliminación del usuario', 
+            alertify.confirm('Eliminar', 'Presione Ok para confirmar la eliminación del usuario', 
             function()
             {
                 $.post("php/controlador.php", { id:id_em, op:'4' }, function(data, status)
