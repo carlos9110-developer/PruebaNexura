@@ -149,8 +149,8 @@
                                 </div>
                                 <select class="form-control" name="area" id="area" required>
                                 <option value="">Seleccione una opción:</option>
-                                    <?php foreach($roles as $rol ): ?>
-                                        <option value="<?php echo $rol->id ?>"><?php echo $rol->nombre ?></option>
+                                    <?php foreach($areas as $area ): ?>
+                                        <option value="<?php echo $area->id ?>"><?php echo $area->nombre ?></option>
                                     <?php endforeach;?>
                                 </select>
                             </div>
