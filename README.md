@@ -9,3 +9,4 @@ Cabe aclarar que manejo muy bien el framework laravel
 
 En la raiz del proyecto se encuentra el script para generar la base de datos utilizada, el motor de la base de datos es mysql, y si hay algún problema con la conexión se debe revisar la clase del archivo php/Base.php para configurar los parametros de conexión 
 
+Se debe correr el proyecto con conexión a internet ya que las librerias como Bootstrap, Jquery y Datatables estan vinculadas por sus CDN
